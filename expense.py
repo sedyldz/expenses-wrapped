@@ -16,13 +16,13 @@ def turkish_lower(s):
 # Translating the keywords to Turkish for better categorization
 # Updated keywords in Turkish
 keywords = {
-    "Food & Drink": ["a.ç.t. dürüm ve meze", "arkestra", "bakery", "bakes", "bakkal", "bim","bordel", "cagrim", "dondurma", "ebsm et balik", "firin", "gida","gozde sarkuteri", "harman firin", "kafe", "kahve", "lokanta", "market","cafe","marmaris büfe", "migros", "mill cafe", "minimal kahve mutfak", "mopas", "mudavim", "müdavim lokantasi", "narbakery", "nicel bakes scoops", "parantez panayir yerigida", "perakende", "pinar dondurma", "rest", "restaurant", "restoran", "salipazari", "salipazari yavuzun y", "sarkuteri","şarküteri","su urunleri", "süpermarket", "tove gida", "unlu mamüller", "unlumamüller", "mc donalds", "çağrım unlu mamuller", "çağrım unlu mamüller","sour","sweet","benazio","kahve","mutfak","village","şok","haci bekir","kafe","yemek"],
-    "Home+Health": ["eczane", "sağlık", "fatura", "ev", "kira", "iski su", "enerjisa ayesaş","ikea","bauhaus","türk telekom mobil", "turkcell superonline","carrefour"],
-    "Clothes+Beauty+Utilities": ["giyim", "kıyafet", "moda", "güzellik", "kuaför","beymen","vakko","zorlu","atasun","kuvars","brooks brothers","barcin","h&m","cos","spor","ralph lauren","decathlon","tekstil","massimo","zara","sportive","mudo","mango","apple store","levis"],
+    "Food & Drink": ["a.ç.t. dürüm ve meze", "arkestra", "bakery", "bakes", "bakkal", "bim","bordel", "cagrim", "dondurma", "ebsm et balik", "firin", "gida","gozde sarkuteri", "harman firin", "kafe", "kahve", "lokanta", "market","cafe","marmaris büfe", "migros", "mill cafe", "minimal kahve mutfak", "mopas", "mudavim", "müdavim lokantasi", "narbakery", "nicel bakes scoops", "parantez panayir yerigida", "perakende", "pinar dondurma", "rest", "restaurant", "restoran", "salipazari", "salipazari yavuzun y", "sarkuteri","şarküteri","su urunleri", "süpermarket", "tove gida", "unlu mamüller", "unlumamüller", "mc donalds", "çağrım unlu mamuller", "çağrım unlu mamüller","sour","sweet","benazio","kahve","mutfak","village","şok","haci bekir","kafe","yemek","burger","caffe","happy center","tekel"],
+    "Home+Health": ["eczane", "sağlık", "fatura", "ev", "kira", "iski su", "enerjisa ayesaş","ikea","bauhaus","türk telekom mobil", "turkcell superonline","carrefour","kozmetik"],
+    "Clothes+Beauty+Utilities": ["giyim", "kıyafet", "moda", "güzellik", "kuaför","beymen","vakko","zorlu","atasun","kuvars","brooks brothers","barcin","h&m","cos","spor","ralph lauren","decathlon","tekstil","massimo","zara","sportive","mudo","mango","apple store","levis","oysho","trendyol"],
     "Entertainment": ["sinema", "film", "eğlence", "oyun", "konser","etkinlik","passo","müzik","muzik"],
     "Travel": ["ita","fr","prt","seyahat", "uçuş", "otel", "tren", "otobüs","uber","airbnb","moov","belbim","booking","bitaksi","takside","lisboa","sabiha gökçen"],
     "Subscription": ["spotify", "netflix", "prime", "hbo", "patreon","apple.com/bill","google"],
-    "Tax": ["vergi"],
+    "Tax": ["vergi","v.d."],
     "Other": []  # No specific keywords for 'Other'; it's a default category
 }
 
