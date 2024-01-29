@@ -29,6 +29,18 @@ keywords = {
     "Other": []  # No specific keywords for 'Other'; it's a default category
 }
 
+color_map = {
+    "Food & Drink": 'blue',
+    "Home+Health": 'green',
+    "Clothes+Beauty+Utilities": 'red',
+    "Entertainment":"orange",
+    "Travel": "purple",
+    "Subscription": "yellow",
+    "Tax": "brown",
+    "Other": "grey",
+    "Skipped": "lightblue"
+}
+
 
 
 # Function to categorize each expense based on the Turkish operation description
@@ -64,12 +76,15 @@ for f in files:
     # Calculate the percentage of each category
     category_percentages = expenses_df['category'].value_counts(normalize=True) * 100
 
-    # Plot the pie chart
+    # Create a list of colors for the pie chart
+    colors = [color_map[category] for category in category_percentages.index]
+
+    # Plot the pie chart with the specified colors
     plt.figure(figsize=(10, 6))
-    plt.pie(category_percentages, labels=category_percentages.index, autopct='%1.1f%%')
+    plt.pie(category_percentages, labels=category_percentages.index, autopct='%1.1f%%', colors=colors)
     plt.title('Expense Categories')
     plt.show()
-
+    
     # Save the updated dataframe to a new CSV file
     updated_file_path_tr = categorized_file
     expenses_df.to_csv(updated_file_path_tr, index=False)
