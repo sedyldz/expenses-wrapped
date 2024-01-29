@@ -3,6 +3,9 @@ import os
 import pandas as pd
 # Adjusting the function to handle Turkish-specific case conversion
 import unicodedata
+import matplotlib.pyplot as plt
+
+
 # Loads an Excel expense file, cleans and prepares the data, 
 # translates expense keywords to Turkish, categorizes expenses based on keywords,
 # and saves the categorized expenses to a new CSV file.
@@ -53,13 +56,22 @@ for f in files:
     expenses_df = expenses_df.drop(expenses_df.index[0])
     # Drop the 'bonus' column, axis 1 deletes column instead of row
     expenses_df = expenses_df.drop('bonus', axis=1)
-    expenses_df.head()
+    #expenses_df.head()
 
     # Apply the new categorization function to the dataframe
     expenses_df['category'] = expenses_df['operation'].apply(categorize_expense_tr)
+
+    # Calculate the percentage of each category
+    category_percentages = expenses_df['category'].value_counts(normalize=True) * 100
+
+    # Plot the pie chart
+    plt.figure(figsize=(10, 6))
+    plt.pie(category_percentages, labels=category_percentages.index, autopct='%1.1f%%')
+    plt.title('Expense Categories')
+    plt.show()
 
     # Save the updated dataframe to a new CSV file
     updated_file_path_tr = categorized_file
     expenses_df.to_csv(updated_file_path_tr, index=False)
 
-    updated_file_path_tr
+    #updated_file_path_tr
