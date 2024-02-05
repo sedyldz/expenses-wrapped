@@ -4,6 +4,8 @@
 
 `expenses-wrapped` is a Python script designed to automate the categorization of monthly expenses from Excel files. It processes transaction records, including company names, dates, and amounts, and categorizes each expense based on predefined keywords. The script handles Turkish-specific case conversions for accurate categorization and includes visualization through pie charts to represent the distribution of expenses across different categories. This tool is particularly useful for individuals looking to gain insights into their spending patterns and manage their finances more effectively.
 
+<img width="848" alt="Screenshot 2024-02-05 at 17 54 03" src="https://github.com/sedyldz/expenses-wrapped/assets/41821819/8c155b75-1367-4434-94bb-0f3095b94a25">
+
 ## Features
 
 - **Turkish Case Conversion**: Custom function to accurately match Turkish characters during the categorization process.
