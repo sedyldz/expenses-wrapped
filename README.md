@@ -42,6 +42,10 @@ Run the script:
 python expenses_wrapped.py
 ```
 
-
 Check the output folders for categorized expense reports and pie charts.
+
+## Next Steps
+
+I will continue categorizing more expenses with ChatGPT to reduce the amount of expenses categorized under 'Other'.
+
 
